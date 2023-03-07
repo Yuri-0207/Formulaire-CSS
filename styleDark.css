@@ -1,0 +1,141 @@
+:root {
+  --textColor: #063d00;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  filter: invert(1) hue-rotate(180deg);
+}
+img {
+  filter: invert(1) hue-rotate(180deg);
+}
+main {
+  background-color: #e4ffe1;
+  max-width: fit-content;
+  box-shadow: 0px 0px 5px 2px inset white;
+  box-shadow: 0px 0px 20px 2px var(--textColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 350px) {
+  main {
+    width: 100%;
+  }
+}
+section {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section > div {
+  background-color: #c8ffc2;
+  margin: 0rem 2rem 0.2rem 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px white;
+  position: relative;
+}
+@media only screen and (max-width: 350px) {
+  section > div {
+    margin: 0.5rem;
+  }
+  section > div:not(.pay) {
+    flex-direction: column;
+  }
+  section > div:not(.pay) > label {
+    padding: 0.3rem;
+  }
+}
+section > div:not(.pay) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section > div > label {
+  display: inline-flex;
+  color: var(--textColor);
+  font-weight: 600;
+}
+input:not(input[type="radio"]),
+textarea {
+  display: inline-block;
+  width: 14rem;
+  margin-right: 2rem;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 300ms;
+  transition-delay: 0.3s;
+  transition-property: box-shadow;
+  transition-timing-function: ease;
+}
+::placeholder {
+  color: var(--textColor);
+  opacity: 0.4;
+}
+input:not(input[type="radio"]):focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px 1px inset #0e8f00;
+  transition-duration: 500ms;
+  transition-delay: 0.3s;
+  transition-property: box-shadow;
+  transition-timing-function: ease;
+}
+input[type="radio"] {
+  accent-color: #0e8f00;
+}
+.crtbnclbl {
+  padding-bottom: 1rem;
+  color: var(--textColor);
+  font-weight: 600;
+}
+.crtbnc {
+  display: flex;
+  justify-content: space-around;
+}
+.crtbnc > div > label {
+  color: var(--textColor);
+  font-weight: 600;
+}
+.entitule,
+.butn {
+  color: var(--textColor);
+  font-weight: 600;
+  margin: 0.4rem 0 0.4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.butn > label {
+  background-color: var(--textColor);
+  opacity: 0.8;
+  color: #c8ffc2;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 15px;
+  transition-duration: 500ms;
+  transition-property: opacity, color, border-radius;
+  transition-timing-function: ease;
+}
+.butn > label:hover {
+  opacity: 1;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 500ms;
+  transition-property: opacity, color, border-radius;
+  transition-timing-function: ease;
+}
+#but {
+  display: none;
+}
+.darkmode {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
