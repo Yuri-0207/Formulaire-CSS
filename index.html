@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="theme-selector">
+      <input type="radio" name="theme" id="light" checked />
+      <input type="radio" name="theme" id="blue" />
+      <input type="radio" name="theme" id="pink" />
+      <input type="radio" name="theme" id="dark" />
+    </nav>
+    <main>
+      <div class="entitule">Step1: Votre Identite</div>
+      <section>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" placeholder="Nom et Prenom" name="" id="nom" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="exemple@domaine.com"
+            name=""
+            id="email"
+          />
+        </div>
+        <div>
+          <label for="tel">Telephone</label>
+          <input type="tel" placeholder="ex: +213 xxxxxxxxx" name="" id="tel" />
+        </div>
+      </section>
+      <div class="entitule">Step2: Adresse de Livraison</div>
+      <section>
+        <div>
+          <label for="adr">Adresse</label>
+          <textarea name="" id="adr" cols="30" rows="4"></textarea>
+        </div>
+        <div>
+          <label for="cp">Code postal</label>
+          <input type="text" name="" id="cp" />
+        </div>
+        <div>
+          <label for="pays">Pays</label>
+          <input type="text" name="" id="pays" />
+        </div>
+      </section>
+      <div class="entitule">Step3: Informations CB</div>
+      <section>
+        <div class="pay">
+          <div class="crtbnclbl">Type de carte bancaire</div>
+          <div class="crtbnc">
+            <div>
+              <input
+                type="radio"
+                name="payment-method"
+                value="Visa"
+                id="visa"
+              />
+              <label for="visa"
+                ><img
+                  src="WhatsApp Image 2023-02-25 à 2df1.58.33.jpg"
+                  alt=""
+                  width="25rem"
+                />
+                VISA</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="payment-method"
+                value="MasterCard"
+                id="master"
+              />
+              <label for="master"
+                ><img
+                  src="WhatsApp Image 2023-02-25 à 21.58.33.jpg"
+                  alt=""
+                  width="25rem"
+                />
+                AmEx</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="payment-method"
+                value="Americanxpress"
+                id="express"
+              />
+              <label for="express"
+                ><img
+                  src="WhatsApp Image 2023-02-25 ZXcà 21.58.34.jpg"
+                  alt=""
+                  width="25rem"
+                />
+                Mastercard</label
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="carte">N de carte</label>
+          <input type="text" name="" id="carte" />
+        </div>
+        <div>
+          <label for="sec">Code securite</label>
+          <input type="password" name="" id="sec" />
+        </div>
+        <div>
+          <label for="nomP">Nom de porteur</label>
+          <input
+            type="text"
+            placeholder="meme nom de la carte"
+            name=""
+            id="nomP"
+          />
+        </div>
+      </section>
+      <div class="butn">
+        <label for="but">J'ACHTETE!</label>
+        <button id="but"></button>
+      </div>
+    </main>
+  </body>
+</html>
